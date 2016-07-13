@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MePod"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = 'HXStoreUtilities, a library of app. Common classes.'
 
   s.homepage     = "https://github.com/sujeking/MePod"
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
 
-  s.source       = { :git => "https://github.com/sujeking/MePod.git", :tag => "0.0.3", :submodules => true }
+  s.source       = { :git => "https://github.com/sujeking/MePod.git", :tag => "0.0.4", :submodules => true }
 
 
 # ----------------------------------------------------------------
