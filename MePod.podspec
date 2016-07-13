@@ -41,4 +41,12 @@ Pod::Spec.new do |s|
     }
   end
 
+  s.subspec 'HXSShopTableViewCell' do |ss|
+    ss.source_files = 'MyLib/HXSShopTableViewCell/*.{h,m}' #//代码
+    ss.resource_bundles = {
+      'HXSShopTableViewCell' => 'MyLib/HXSShopTableViewCell/Resouces/*'  #//xib 图片 等等
+    }
+    
+  end
+
 end
