@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HXSPopView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mb-fX-xCV">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MAy-7F-AiD">
+                            <rect key="frame" x="30" y="50" width="260" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="S9T-at-yEQ"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cR-88-MOf" userLabel="line">
+                            <rect key="frame" x="274" y="30" width="1" height="20"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="Moh-hy-uep"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRZ-wh-XgQ">
+                            <rect key="frame" x="260" y="0.0" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="DFu-AX-IFE"/>
+                                <constraint firstAttribute="height" constant="30" id="dC1-vs-v1l"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="close.png"/>
+                            <connections>
+                                <action selector="closeButtonClickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="RGw-56-WBe"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="MAy-7F-AiD" secondAttribute="trailing" constant="30" id="0Gb-Ld-0q6"/>
+                        <constraint firstAttribute="trailing" secondItem="jRZ-wh-XgQ" secondAttribute="trailing" constant="30" id="MKk-sz-mQH"/>
+                        <constraint firstItem="jRZ-wh-XgQ" firstAttribute="top" secondItem="0mb-fX-xCV" secondAttribute="top" constant="15" id="QDX-4N-u1E"/>
+                        <constraint firstItem="MAy-7F-AiD" firstAttribute="top" secondItem="0mb-fX-xCV" secondAttribute="top" constant="64" id="R8N-jK-jJ4"/>
+                        <constraint firstItem="MAy-7F-AiD" firstAttribute="leading" secondItem="0mb-fX-xCV" secondAttribute="leading" constant="30" id="W1W-Wp-5tl"/>
+                        <constraint firstItem="MAy-7F-AiD" firstAttribute="centerX" secondItem="0mb-fX-xCV" secondAttribute="centerX" id="WOt-jY-CWa"/>
+                        <constraint firstItem="jRZ-wh-XgQ" firstAttribute="top" secondItem="0mb-fX-xCV" secondAttribute="top" id="Wfe-07-0rS"/>
+                        <constraint firstAttribute="trailing" secondItem="MAy-7F-AiD" secondAttribute="trailing" constant="30" id="bfN-w8-haG"/>
+                        <constraint firstItem="MAy-7F-AiD" firstAttribute="top" secondItem="0mb-fX-xCV" secondAttribute="top" constant="50" id="fic-f6-wNa"/>
+                        <constraint firstItem="MAy-7F-AiD" firstAttribute="centerY" secondItem="0mb-fX-xCV" secondAttribute="centerY" id="jTg-Xc-WUP"/>
+                        <constraint firstItem="MAy-7F-AiD" firstAttribute="top" secondItem="0cR-88-MOf" secondAttribute="bottom" id="kcG-AO-ksA"/>
+                        <constraint firstAttribute="trailing" secondItem="0cR-88-MOf" secondAttribute="trailing" constant="45" id="khn-sk-U6L"/>
+                        <constraint firstItem="MAy-7F-AiD" firstAttribute="leading" secondItem="0mb-fX-xCV" secondAttribute="leading" constant="30" id="mlI-Hg-Wfl"/>
+                        <constraint firstItem="0cR-88-MOf" firstAttribute="top" secondItem="jRZ-wh-XgQ" secondAttribute="bottom" id="nYn-vz-wJH"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0Gb-Ld-0q6"/>
+                            <exclude reference="R8N-jK-jJ4"/>
+                            <exclude reference="WOt-jY-CWa"/>
+                            <exclude reference="jTg-Xc-WUP"/>
+                            <exclude reference="mlI-Hg-Wfl"/>
+                            <exclude reference="QDX-4N-u1E"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="0mb-fX-xCV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="ESr-yv-ZmT"/>
+                <constraint firstItem="0mb-fX-xCV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KXK-Ob-aWz"/>
+                <constraint firstAttribute="bottom" secondItem="0mb-fX-xCV" secondAttribute="bottom" id="MdL-4a-0Be"/>
+                <constraint firstAttribute="trailing" secondItem="0mb-fX-xCV" secondAttribute="trailing" id="eg5-Dj-xBS"/>
+                <constraint firstItem="0mb-fX-xCV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="weZ-fF-sAi"/>
+                <constraint firstAttribute="bottom" secondItem="0mb-fX-xCV" secondAttribute="bottom" constant="220" id="yWe-jD-R9U"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="KXK-Ob-aWz"/>
+                    <exclude reference="yWe-jD-R9U"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="popBgView" destination="0mb-fX-xCV" id="dlR-du-GrZ"/>
+                <outlet property="popContentHeightConstraint" destination="S9T-at-yEQ" id="kOr-cU-Seo"/>
+                <outlet property="popContentImageView" destination="MAy-7F-AiD" id="IV4-2V-4Nt"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="close.png" width="188" height="188"/>
+    </resources>
+</document>
