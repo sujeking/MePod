@@ -32,7 +32,10 @@
 
 - (instancetype)initWithUrl:(NSString *)imageUrl
 {
-    self = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil] firstObject];
+    NSBundle* bundle = [NSBundle bundleWithURL:[NSBundle.mainBundle URLForResource:NSStringFromClass([self class])
+                                                                    withExtension:@"bundle"]];
+    NSArray* nib = [bundle loadNibNamed:NSStringFromClass([self class]) owner:self options:nil];
+    self = [nib firstObject];
     
     if (self)
     {
