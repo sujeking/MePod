@@ -66,7 +66,7 @@
 
 - (void)show
 {
-    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
     [window addSubview:self];
 
     
