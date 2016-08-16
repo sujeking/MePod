@@ -1,0 +1,1 @@
+../../../HXStoreMediator/HXStoreMediator/ModuleActions/ShopModule/HXSMediator+HXSShopActions.h

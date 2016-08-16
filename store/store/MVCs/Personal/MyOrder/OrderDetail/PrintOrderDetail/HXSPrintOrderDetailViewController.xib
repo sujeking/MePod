@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXSPrintOrderDetailViewController">
+            <connections>
+                <outlet property="bottomConstraint" destination="Dhv-lE-hxL" id="yNa-R6-IHK"/>
+                <outlet property="bottomContainer" destination="JOD-Mn-Jzw" id="cv6-lA-8ix"/>
+                <outlet property="tableView" destination="GmP-V8-95t" id="vyO-VA-O8L"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="GmP-V8-95t">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOD-Mn-Jzw">
+                    <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dtm-R1-1xt" customClass="HXSLineView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="S8N-Qf-FZU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="846-GA-gjY"/>
+                        <constraint firstItem="Dtm-R1-1xt" firstAttribute="top" secondItem="JOD-Mn-Jzw" secondAttribute="top" id="MDo-J9-PPw"/>
+                        <constraint firstAttribute="trailing" secondItem="Dtm-R1-1xt" secondAttribute="trailing" id="RC3-RI-OWS"/>
+                        <constraint firstItem="Dtm-R1-1xt" firstAttribute="leading" secondItem="JOD-Mn-Jzw" secondAttribute="leading" id="bY5-PC-8fI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GmP-V8-95t" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1mS-WK-fle"/>
+                <constraint firstItem="GmP-V8-95t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8SB-r0-Wzf"/>
+                <constraint firstAttribute="bottom" secondItem="JOD-Mn-Jzw" secondAttribute="bottom" id="Dhv-lE-hxL"/>
+                <constraint firstItem="JOD-Mn-Jzw" firstAttribute="top" secondItem="GmP-V8-95t" secondAttribute="bottom" id="RgE-Ya-EFv"/>
+                <constraint firstAttribute="trailing" secondItem="JOD-Mn-Jzw" secondAttribute="trailing" id="V7z-6f-RJy"/>
+                <constraint firstAttribute="trailing" secondItem="GmP-V8-95t" secondAttribute="trailing" id="YYJ-0K-Xss"/>
+                <constraint firstItem="JOD-Mn-Jzw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ggP-Eh-fyV"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,1 @@
+../../../HXStoreAccount/HXStoreAccount/Classes/SDKs/RenrenSDK/HXSRenrenManager.h

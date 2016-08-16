@@ -1,0 +1,1 @@
+../../../HXStoreAccount/HXStoreAccount/Classes/HXSAccountManager.h

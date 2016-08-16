@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HXSMyAttentionTopicCell" rowHeight="131" id="KGk-i7-Jjw" customClass="HXSMyAttentionTopicCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="142.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWW-ep-97J">
+                        <rect key="frame" x="0.0" y="45" width="320" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="4JG-SB-o8w"/>
+                        </constraints>
+                    </scrollView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9PG-8e-UBA">
+                        <rect key="frame" x="0.0" y="125" width="320" height="9"/>
+                        <color key="backgroundColor" red="0.96056312322616577" green="0.96470874547958374" blue="0.96871882677078247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="9" id="2G5-gV-B1W"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nS5-Ie-yeo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypY-md-dDo">
+                                <rect key="frame" x="242" y="13" width="70" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="4AC-7R-Mme"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Ad0-jX-EmC"/>
+                                    <constraint firstAttribute="height" constant="20" id="aQl-jB-qcp"/>
+                                    <constraint firstAttribute="width" constant="70" id="u6O-wd-r1G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="所有话题&gt;">
+                                    <color key="titleColor" red="0.71364659070000003" green="0.71377098559999996" blue="0.71363878250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4AC-7R-Mme"/>
+                                        <exclude reference="Ad0-jX-EmC"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="loadMoreButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vpV-7v-WfX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐的话题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6q-Bc-mUu">
+                                <rect key="frame" x="8" y="13" width="100" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="RBH-XW-TYu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="T0d-eG-ChQ"/>
+                                    <constraint firstAttribute="width" constant="100" id="XPf-S4-Cio"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="tmd-TM-Guf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="T0d-eG-ChQ"/>
+                                        <exclude reference="tmd-TM-Guf"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m6q-Bc-mUu" firstAttribute="centerY" secondItem="nS5-Ie-yeo" secondAttribute="centerY" id="0M7-Iy-Tzg"/>
+                            <constraint firstAttribute="trailing" secondItem="ypY-md-dDo" secondAttribute="trailing" constant="8" id="6x5-ow-dM2"/>
+                            <constraint firstAttribute="height" constant="45" id="DzG-Xf-s25"/>
+                            <constraint firstItem="m6q-Bc-mUu" firstAttribute="leading" secondItem="nS5-Ie-yeo" secondAttribute="leading" constant="8" id="OD2-WY-hdC"/>
+                            <constraint firstItem="ypY-md-dDo" firstAttribute="centerY" secondItem="nS5-Ie-yeo" secondAttribute="centerY" id="r9j-09-Ppi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nS5-Ie-yeo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2GW-Ye-Awx"/>
+                    <constraint firstItem="9PG-8e-UBA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4PX-Wa-Heg"/>
+                    <constraint firstAttribute="bottom" secondItem="CWW-ep-97J" secondAttribute="bottom" id="9Am-wG-gyU"/>
+                    <constraint firstAttribute="bottom" secondItem="9PG-8e-UBA" secondAttribute="bottom" id="BNm-Vc-F70"/>
+                    <constraint firstItem="CWW-ep-97J" firstAttribute="top" secondItem="nS5-Ie-yeo" secondAttribute="bottom" id="FVQ-3x-6H1"/>
+                    <constraint firstAttribute="trailing" secondItem="CWW-ep-97J" secondAttribute="trailing" id="IVB-PU-kR8"/>
+                    <constraint firstItem="nS5-Ie-yeo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="J3M-oi-k7o"/>
+                    <constraint firstAttribute="trailing" secondItem="9PG-8e-UBA" secondAttribute="trailing" id="LbP-Yb-Bd3"/>
+                    <constraint firstItem="nS5-Ie-yeo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PTX-ZW-Pi0"/>
+                    <constraint firstAttribute="trailing" secondItem="nS5-Ie-yeo" secondAttribute="trailing" id="ZU6-YY-Mfm"/>
+                    <constraint firstItem="CWW-ep-97J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="crk-MZ-Hvs"/>
+                    <constraint firstItem="9PG-8e-UBA" firstAttribute="top" secondItem="CWW-ep-97J" secondAttribute="bottom" constant="20" id="d0E-uO-QRd"/>
+                    <constraint firstItem="9PG-8e-UBA" firstAttribute="top" secondItem="CWW-ep-97J" secondAttribute="bottom" id="hvK-yb-ZNu"/>
+                    <constraint firstItem="CWW-ep-97J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nyL-EJ-5fa"/>
+                    <constraint firstAttribute="trailing" secondItem="nS5-Ie-yeo" secondAttribute="trailing" id="pao-qY-8Nd"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="PTX-ZW-Pi0"/>
+                        <exclude reference="pao-qY-8Nd"/>
+                        <exclude reference="9Am-wG-gyU"/>
+                        <exclude reference="crk-MZ-Hvs"/>
+                        <exclude reference="BNm-Vc-F70"/>
+                        <exclude reference="d0E-uO-QRd"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="itamsScrollView" destination="CWW-ep-97J" id="w41-cO-Oaw"/>
+            </connections>
+            <point key="canvasLocation" x="72" y="90.5"/>
+        </tableViewCell>
+    </objects>
+</document>

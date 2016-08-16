@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="HXSSubscribeBankCardBottomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="同意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRm-Rl-bMH">
+                        <rect key="frame" x="48" y="20" width="24" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Q9-mm-1Ii">
+                        <rect key="frame" x="72" y="14" width="88" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="开通59钱包协议">
+                            <color key="titleColor" red="0.027450980390000001" green="0.66274509800000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOF-bZ-Jzz">
+                        <rect key="frame" x="15" y="15" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="SLQ-sq-saj"/>
+                            <constraint firstAttribute="height" constant="25" id="j0Z-dd-0Kl"/>
+                        </constraints>
+                        <state key="normal" image="btn_choose_blue"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4q-s5-5La" customClass="HXSRoundedButton">
+                        <rect key="frame" x="15" y="61" width="290" height="44"/>
+                        <color key="backgroundColor" red="0.027450980390000001" green="0.66274509800000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="awi-hd-sER"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" title="正式提交开通申请">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="disabled" title="正式提交开通申请">
+                            <color key="titleColor" red="0.88235294119999996" green="0.8862745098" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="p4q-s5-5La" firstAttribute="top" secondItem="4Q9-mm-1Ii" secondAttribute="bottom" constant="20" id="5h6-Xx-nRZ"/>
+                    <constraint firstItem="kRm-Rl-bMH" firstAttribute="centerY" secondItem="XOF-bZ-Jzz" secondAttribute="centerY" id="838-G6-ZaU"/>
+                    <constraint firstItem="4Q9-mm-1Ii" firstAttribute="centerY" secondItem="kRm-Rl-bMH" secondAttribute="centerY" id="bzK-aw-wIo"/>
+                    <constraint firstItem="kRm-Rl-bMH" firstAttribute="leading" secondItem="XOF-bZ-Jzz" secondAttribute="trailing" constant="8" id="oe1-hg-f9J"/>
+                    <constraint firstItem="XOF-bZ-Jzz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ycB-ST-XQu"/>
+                    <constraint firstItem="XOF-bZ-Jzz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ylE-KG-yQa"/>
+                    <constraint firstItem="4Q9-mm-1Ii" firstAttribute="leading" secondItem="kRm-Rl-bMH" secondAttribute="trailing" id="zf9-EQ-CEi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="p4q-s5-5La" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="15" id="hHN-d7-nSQ"/>
+                <constraint firstAttribute="trailing" secondItem="p4q-s5-5La" secondAttribute="trailing" constant="15" id="x8Z-5Z-3pe"/>
+            </constraints>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="agreementBtn" destination="XOF-bZ-Jzz" id="IJa-cK-U3g"/>
+                <outlet property="openLoanContractButton" destination="4Q9-mm-1Ii" id="8iO-gS-XTx"/>
+                <outlet property="submitButton" destination="p4q-s5-5La" id="dkY-3E-yd5"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_choose_blue" width="25" height="25"/>
+    </resources>
+</document>

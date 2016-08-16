@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXSMyEachOrderViewController">
+            <connections>
+                <outlet property="cannotFindImageView" destination="ayX-4i-n20" id="Awm-eT-bo5"/>
+                <outlet property="cannotFindLabel" destination="SoB-kY-HtD" id="5tV-uy-YFb"/>
+                <outlet property="tableView" destination="wfU-V8-ea7" id="qKJ-5y-hfZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_empty_cash_record" translatesAutoresizingMaskIntoConstraints="NO" id="ayX-4i-n20">
+                    <rect key="frame" x="260" y="80" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="bIs-re-Ag2"/>
+                        <constraint firstAttribute="width" constant="80" id="tQf-kp-MOc"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无订单记录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoB-kY-HtD">
+                    <rect key="frame" x="261" y="175" width="78" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="wfU-V8-ea7">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="separatorColor" red="0.81960784313725488" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wfU-V8-ea7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4MG-ke-G3B"/>
+                <constraint firstAttribute="bottom" secondItem="wfU-V8-ea7" secondAttribute="bottom" id="4pA-Se-aeK"/>
+                <constraint firstAttribute="trailing" secondItem="wfU-V8-ea7" secondAttribute="trailing" id="7L6-7J-QAO"/>
+                <constraint firstItem="ayX-4i-n20" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="ehh-Lv-lG5"/>
+                <constraint firstItem="wfU-V8-ea7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="f79-QW-D8K"/>
+                <constraint firstItem="SoB-kY-HtD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rj0-lW-g2w"/>
+                <constraint firstItem="ayX-4i-n20" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rx6-zc-97I"/>
+                <constraint firstItem="SoB-kY-HtD" firstAttribute="top" secondItem="ayX-4i-n20" secondAttribute="bottom" constant="15" id="xSu-ns-rOv"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_empty_cash_record" width="80" height="80"/>
+    </resources>
+</document>

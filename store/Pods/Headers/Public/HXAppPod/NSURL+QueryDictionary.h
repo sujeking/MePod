@@ -1,0 +1,1 @@
+../../../HXAppPod/HXAppPod/Classes/Utils/NSURL+QueryDictionary.h

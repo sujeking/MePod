@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NxE-2K-SnK" customClass="HXSNoCommentView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_kong_huifuwode" translatesAutoresizingMaskIntoConstraints="NO" id="hZR-gV-gLF">
+                    <rect key="frame" x="210" y="40" width="180" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="OMG-GD-fdH"/>
+                        <constraint firstAttribute="width" constant="180" id="uVe-yx-1Yf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没人来这里墨迹" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGR-ui-7u3">
+                    <rect key="frame" x="0.0" y="204" width="600" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" red="0.19215686269999999" green="0.33333333329999998" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96056312322616577" green="0.96470874547958374" blue="0.96871882677078247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JGR-ui-7u3" secondAttribute="trailing" id="MT5-CR-jEi"/>
+                <constraint firstItem="hZR-gV-gLF" firstAttribute="centerX" secondItem="NxE-2K-SnK" secondAttribute="centerX" id="POF-Uq-HVq"/>
+                <constraint firstItem="JGR-ui-7u3" firstAttribute="leading" secondItem="NxE-2K-SnK" secondAttribute="leading" id="QLg-yh-4N1"/>
+                <constraint firstItem="JGR-ui-7u3" firstAttribute="top" secondItem="hZR-gV-gLF" secondAttribute="bottom" constant="24" id="Uel-XT-tjd"/>
+                <constraint firstItem="JGR-ui-7u3" firstAttribute="centerX" secondItem="NxE-2K-SnK" secondAttribute="centerX" id="bCk-48-gHy"/>
+                <constraint firstItem="hZR-gV-gLF" firstAttribute="top" secondItem="NxE-2K-SnK" secondAttribute="top" constant="40" id="vND-uN-VQu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="213" y="449.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_kong_huifuwode" width="180" height="140"/>
+    </resources>
+</document>

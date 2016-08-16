@@ -1,0 +1,1 @@
+../../../HXThirdSdk/HXThirdSdk/UdeskSDK/UDChatMessage/Tools/Vendor/UDPhotoViewer/UDPhotoManeger.h

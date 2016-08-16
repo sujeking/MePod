@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="HXSSubscribeInputTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XD5-3e-YO2">
+                        <rect key="frame" x="15" y="14" width="85" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="OaN-q5-ci0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5uW-3g-RcD" userLabel="input">
+                        <rect key="frame" x="100" y="13" width="205" height="19"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5uW-3g-RcD" firstAttribute="leading" secondItem="XD5-3e-YO2" secondAttribute="trailing" id="Tsp-rc-Zol"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="5uW-3g-RcD" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="9cN-8t-gde"/>
+                <constraint firstItem="XD5-3e-YO2" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="15" id="Mjv-5R-vVr"/>
+                <constraint firstAttribute="trailing" secondItem="5uW-3g-RcD" secondAttribute="trailing" constant="15" id="SnR-ct-ZXt"/>
+                <constraint firstItem="XD5-3e-YO2" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="gIK-CP-xjJ"/>
+            </constraints>
+            <connections>
+                <outlet property="keyLabel" destination="XD5-3e-YO2" id="2LN-lm-Go9"/>
+                <outlet property="valueTextField" destination="5uW-3g-RcD" id="Z9X-FA-IQQ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

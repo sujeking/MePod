@@ -1,0 +1,1 @@
+../../../HXThirdSdk/HXThirdSdk/WechatSDK/WechatAuthSDK.h

@@ -1,0 +1,1 @@
+../../../../HXThirdSdk/HXThirdSdk/QQSDK/TencentOpenAPI.framework/Headers/TencentOAuth.h

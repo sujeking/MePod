@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXSDormEditRemarksViewController">
+            <connections>
+                <outlet property="leftWordsLabel" destination="zfL-uT-Hcu" id="LMn-w8-6by"/>
+                <outlet property="textView" destination="RhY-Ba-4Mu" id="jFi-2F-WzA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDs-OX-RcJ">
+                    <rect key="frame" x="0.0" y="15" width="600" height="150"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGb-f9-xDK" userLabel="TopLine" customClass="HXSLineView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.89803921568627454" green="0.90196078431372551" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Md6-WL-21U"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vY-LD-FQF" userLabel="BottomLine" customClass="HXSLineView">
+                            <rect key="frame" x="0.0" y="149" width="600" height="1"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.8980392157" green="0.90196078430000004" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="qgw-lm-ezg"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium" translatesAutoresizingMaskIntoConstraints="NO" id="RhY-Ba-4Mu">
+                            <rect key="frame" x="12" y="1" width="576" height="130"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/150" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="zfL-uT-Hcu">
+                            <rect key="frame" x="553" y="123" width="37" height="17"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="zfL-uT-Hcu" secondAttribute="trailing" constant="10" id="Ea0-Vp-esN"/>
+                        <constraint firstAttribute="bottom" secondItem="zfL-uT-Hcu" secondAttribute="bottom" constant="10" id="KGb-gg-nKF"/>
+                        <constraint firstItem="EGb-f9-xDK" firstAttribute="top" secondItem="RDs-OX-RcJ" secondAttribute="top" id="McG-Sh-Fse"/>
+                        <constraint firstItem="RhY-Ba-4Mu" firstAttribute="leading" secondItem="RDs-OX-RcJ" secondAttribute="leading" constant="12" id="Nc9-yH-LS3"/>
+                        <constraint firstItem="1vY-LD-FQF" firstAttribute="leading" secondItem="RDs-OX-RcJ" secondAttribute="leading" id="PJe-5N-Gjk"/>
+                        <constraint firstAttribute="bottom" secondItem="1vY-LD-FQF" secondAttribute="bottom" id="TBt-Kd-JJX"/>
+                        <constraint firstAttribute="trailing" secondItem="RhY-Ba-4Mu" secondAttribute="trailing" constant="12" id="WQ7-iL-KJH"/>
+                        <constraint firstAttribute="trailing" secondItem="1vY-LD-FQF" secondAttribute="trailing" id="ahg-Vr-3hz"/>
+                        <constraint firstItem="RhY-Ba-4Mu" firstAttribute="top" secondItem="RDs-OX-RcJ" secondAttribute="top" constant="1" id="jdO-Oh-TM1"/>
+                        <constraint firstItem="EGb-f9-xDK" firstAttribute="leading" secondItem="RDs-OX-RcJ" secondAttribute="leading" id="tOu-OS-M0x"/>
+                        <constraint firstAttribute="trailing" secondItem="EGb-f9-xDK" secondAttribute="trailing" id="ufl-TE-9aR"/>
+                        <constraint firstAttribute="height" constant="150" id="yI3-I9-ioF"/>
+                        <constraint firstItem="1vY-LD-FQF" firstAttribute="top" secondItem="RhY-Ba-4Mu" secondAttribute="bottom" constant="18" id="yiD-vH-RyG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RDs-OX-RcJ" secondAttribute="trailing" id="8wI-u2-2Xj"/>
+                <constraint firstItem="RDs-OX-RcJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DIc-Tr-Hfd"/>
+                <constraint firstItem="RDs-OX-RcJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="c8F-0e-hd0"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

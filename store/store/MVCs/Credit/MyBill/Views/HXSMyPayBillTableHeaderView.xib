@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HXSMyPayBillTableHeaderView" id="iN0-l3-epB" customClass="HXSMyPayBillTableHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eQ-fH-RfH">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-01-01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mud-Nf-8xd">
+                            <rect key="frame" x="15" y="14" width="76" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_bill_overdue" translatesAutoresizingMaskIntoConstraints="NO" id="Jyb-1t-1xH">
+                            <rect key="frame" x="96" y="9" width="49" height="27"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4S-Hc-mkL">
+                            <rect key="frame" x="473" y="15" width="28" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥4444.44" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ts-rh-UvK">
+                            <rect key="frame" x="510" y="13" width="75" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.97647058823529409" green="0.6470588235294118" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.99215686274509807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Mud-Nf-8xd" firstAttribute="leading" secondItem="7eQ-fH-RfH" secondAttribute="leading" constant="15" id="K3p-Rq-owY"/>
+                        <constraint firstItem="4Ts-rh-UvK" firstAttribute="leading" secondItem="h4S-Hc-mkL" secondAttribute="trailing" constant="9" id="NCP-Lc-iFv"/>
+                        <constraint firstItem="Jyb-1t-1xH" firstAttribute="leading" secondItem="Mud-Nf-8xd" secondAttribute="trailing" constant="5" id="cvx-CI-tNj"/>
+                        <constraint firstItem="4Ts-rh-UvK" firstAttribute="centerY" secondItem="h4S-Hc-mkL" secondAttribute="centerY" id="gFf-nb-Van"/>
+                        <constraint firstItem="Jyb-1t-1xH" firstAttribute="centerY" secondItem="7eQ-fH-RfH" secondAttribute="centerY" id="hjG-0q-opI"/>
+                        <constraint firstItem="Mud-Nf-8xd" firstAttribute="centerY" secondItem="7eQ-fH-RfH" secondAttribute="centerY" id="lxe-26-RNp"/>
+                        <constraint firstAttribute="height" constant="44" id="t4r-k7-myx"/>
+                        <constraint firstItem="h4S-Hc-mkL" firstAttribute="centerY" secondItem="7eQ-fH-RfH" secondAttribute="centerY" id="tqW-Qq-L3d"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7eQ-fH-RfH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4qR-vB-cJz"/>
+                <constraint firstItem="7eQ-fH-RfH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Dvo-OV-Vmr"/>
+                <constraint firstAttribute="trailing" secondItem="4Ts-rh-UvK" secondAttribute="trailing" constant="15" id="NhS-vD-mDv"/>
+                <constraint firstAttribute="trailing" secondItem="7eQ-fH-RfH" secondAttribute="trailing" id="dd6-26-pW9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="billHeaderDateLabel" destination="Mud-Nf-8xd" id="c9h-kg-j9P"/>
+                <outlet property="outofDateImageView" destination="Jyb-1t-1xH" id="Voe-KD-OxI"/>
+                <outlet property="topView" destination="7eQ-fH-RfH" id="RtR-Hv-RGx"/>
+                <outlet property="totalCostLabel" destination="4Ts-rh-UvK" id="lLu-0P-89d"/>
+                <outlet property="totalTitleLabel" destination="h4S-Hc-mkL" id="CdM-6z-JHk"/>
+            </connections>
+            <point key="canvasLocation" x="242" y="437"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_bill_overdue" width="49" height="27"/>
+    </resources>
+</document>

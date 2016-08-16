@@ -1,0 +1,1 @@
+../../../HXStoreAccount/HXStoreAccount/Classes/SDKs/QQSDK/HXSQQSdkManager.h

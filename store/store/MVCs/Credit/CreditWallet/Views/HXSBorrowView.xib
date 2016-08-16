@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Vrl-eB-kur" customClass="HXSBorrowView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezv-Gg-hDZ" customClass="HXSBalanceView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="432"/>
+                    <color key="backgroundColor" red="0.031372549019607843" green="0.66274509803921566" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ezv-Gg-hDZ" secondAttribute="height" multiplier="25:18" id="AXc-wk-wdx"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfK-2b-miP">
+                    <rect key="frame" x="0.0" y="608" width="600" height="59"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="FNG-yp-1W0">
+                            <rect key="frame" x="15" y="0.0" width="42" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="9zE-OT-vjM"/>
+                                <constraint firstAttribute="width" constant="42" id="fHt-yj-NQo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还款日会从您绑定的银行卡（尾号）中自动扣除，请保持银行卡中有足够余额，以避免产生额外费用" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="x7W-rR-4h3">
+                            <rect key="frame" x="15" y="11" width="570" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="HFb-Up-xaL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FNG-yp-1W0" firstAttribute="leading" secondItem="lfK-2b-miP" secondAttribute="leading" constant="15" id="0Wt-c8-xc0"/>
+                        <constraint firstAttribute="bottom" secondItem="x7W-rR-4h3" secondAttribute="bottom" constant="8" id="5vF-mK-Hu4"/>
+                        <constraint firstAttribute="height" constant="59" id="NeU-EI-UBR"/>
+                        <constraint firstItem="x7W-rR-4h3" firstAttribute="leading" secondItem="lfK-2b-miP" secondAttribute="leading" constant="15" id="bm6-T7-1aM"/>
+                        <constraint firstAttribute="trailing" secondItem="x7W-rR-4h3" secondAttribute="trailing" constant="15" id="dvi-Ec-v46"/>
+                        <constraint firstItem="FNG-yp-1W0" firstAttribute="top" secondItem="lfK-2b-miP" secondAttribute="top" id="nip-dx-Mu9"/>
+                        <constraint firstItem="x7W-rR-4h3" firstAttribute="top" secondItem="FNG-yp-1W0" secondAttribute="bottom" constant="1" id="qy5-4d-2mo"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cdi-uE-cSn">
+                    <rect key="frame" x="0.0" y="432" width="600" height="168"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ezv-Gg-hDZ" secondAttribute="trailing" id="4Vi-kd-Byb"/>
+                <constraint firstItem="ezv-Gg-hDZ" firstAttribute="top" secondItem="Vrl-eB-kur" secondAttribute="top" id="CVo-wK-jDd"/>
+                <constraint firstAttribute="trailing" secondItem="Cdi-uE-cSn" secondAttribute="trailing" id="DXf-yL-dsb"/>
+                <constraint firstItem="ezv-Gg-hDZ" firstAttribute="leading" secondItem="Vrl-eB-kur" secondAttribute="leading" id="HK4-j0-yNo"/>
+                <constraint firstAttribute="bottom" secondItem="lfK-2b-miP" secondAttribute="bottom" id="IQr-7n-R6U"/>
+                <constraint firstItem="lfK-2b-miP" firstAttribute="leading" secondItem="Vrl-eB-kur" secondAttribute="leading" id="Imx-k2-0HN"/>
+                <constraint firstItem="Cdi-uE-cSn" firstAttribute="top" secondItem="ezv-Gg-hDZ" secondAttribute="bottom" id="a5U-HS-N1e"/>
+                <constraint firstAttribute="trailing" secondItem="lfK-2b-miP" secondAttribute="trailing" id="rZ3-hc-xKu"/>
+                <constraint firstItem="lfK-2b-miP" firstAttribute="top" secondItem="Cdi-uE-cSn" secondAttribute="bottom" constant="8" id="tPw-4D-aRv"/>
+                <constraint firstItem="Cdi-uE-cSn" firstAttribute="leading" secondItem="Vrl-eB-kur" secondAttribute="leading" id="wmy-ds-SrM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="balanceView" destination="ezv-Gg-hDZ" id="y23-J4-nMn"/>
+                <outlet property="tipTextLabel" destination="x7W-rR-4h3" id="PJd-Zb-WK1"/>
+                <outlet property="tipView" destination="lfK-2b-miP" id="OEu-hs-dka"/>
+                <outlet property="walletStatusView" destination="Cdi-uE-cSn" id="zgo-lW-Onq"/>
+            </connections>
+            <point key="canvasLocation" x="379" y="477"/>
+        </view>
+    </objects>
+</document>

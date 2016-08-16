@@ -1,0 +1,1 @@
+../../../HXStoreMediator/HXStoreMediator/ModuleActions/BoxModule/HXSMediator+HXSBoxModule.h

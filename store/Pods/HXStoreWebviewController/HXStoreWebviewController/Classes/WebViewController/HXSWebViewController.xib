@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXSWebViewController">
+            <connections>
+                <outlet property="actionButton" destination="LOY-dx-dEB" id="SIh-7z-kDO"/>
+                <outlet property="backButton" destination="6dG-Qd-iJJ" id="YrR-yh-XTN"/>
+                <outlet property="forwardButton" destination="lVg-xg-arf" id="gSE-xd-9Xg"/>
+                <outlet property="headerConstraint" destination="dJK-1j-Y8G" id="85n-lv-7UA"/>
+                <outlet property="reloadStopButton" destination="17x-cu-L68" id="3WA-MX-m1D"/>
+                <outlet property="toolbar" destination="Ozy-OC-loG" id="Yzf-6z-W7G"/>
+                <outlet property="view" destination="clo-1Y-bLu" id="yQZ-5P-0UY"/>
+                <outlet property="webView" destination="1L0-NA-Eh8" id="WNB-E8-7Vb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="clo-1Y-bLu">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1L0-NA-Eh8">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="lJ4-aw-6ek"/>
+                    </connections>
+                </webView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAP-4W-Sy3">
+                    <rect key="frame" x="0.0" y="599" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.85490196080000003" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="iid-mi-5gK"/>
+                    </constraints>
+                </view>
+                <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ozy-OC-loG">
+                    <rect key="frame" x="0.0" y="601" width="600" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="uDX-zu-0aO"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Wor-b2-KtO"/>
+                        <barButtonItem style="plain" id="V90-rx-dWW">
+                            <button key="customView" opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6dG-Qd-iJJ">
+                                <rect key="frame" x="105" y="9" width="26" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" image="web_icon_back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="AjG-Ur-sqH"/>
+                                    <action selector="goBack" destination="1L0-NA-Eh8" eventType="touchUpInside" id="vqF-ud-LpL"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="tHT-jR-nRm"/>
+                        <barButtonItem style="plain" id="5YI-Pd-c6g">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lVg-xg-arf">
+                                <rect key="frame" x="226" y="9" width="26" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="web_icon_forward">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="forwardButtonTapped:" destination="-1" eventType="touchUpInside" id="xSH-yt-jqM"/>
+                                    <action selector="goForward" destination="1L0-NA-Eh8" eventType="touchUpInside" id="gf6-b8-2Nv"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="xIO-P3-wax"/>
+                        <barButtonItem style="plain" id="etK-1e-ffI">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="17x-cu-L68">
+                                <rect key="frame" x="348" y="9" width="26" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="web_icon_refresh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reload" destination="1L0-NA-Eh8" eventType="touchUpInside" id="XZe-mV-PNM"/>
+                                    <action selector="reloadStopButtonTapped:" destination="-1" eventType="touchUpInside" id="ofj-TM-Ay7"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="VDU-ak-SD7"/>
+                        <barButtonItem style="plain" id="jAt-ZQ-vf3">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LOY-dx-dEB">
+                                <rect key="frame" x="469" y="9" width="26" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="web_icon_share">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonTapped:" destination="-1" eventType="touchUpInside" id="fgd-0d-L30"/>
+                                    <action selector="stopLoading" destination="1L0-NA-Eh8" eventType="touchUpInside" id="awM-pf-Msx"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Yoq-w0-hOz"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ozy-OC-loG" firstAttribute="centerX" secondItem="1L0-NA-Eh8" secondAttribute="centerX" id="5VB-3h-baX"/>
+                <constraint firstItem="1L0-NA-Eh8" firstAttribute="leading" secondItem="clo-1Y-bLu" secondAttribute="leading" id="EQy-2u-9MZ"/>
+                <constraint firstItem="1L0-NA-Eh8" firstAttribute="width" secondItem="uAP-4W-Sy3" secondAttribute="width" id="O5b-cm-XNx"/>
+                <constraint firstItem="1L0-NA-Eh8" firstAttribute="top" secondItem="clo-1Y-bLu" secondAttribute="top" id="dJK-1j-Y8G"/>
+                <constraint firstAttribute="bottom" secondItem="Ozy-OC-loG" secondAttribute="bottom" constant="-45" id="gRO-OQ-arC"/>
+                <constraint firstAttribute="bottom" secondItem="1L0-NA-Eh8" secondAttribute="bottom" id="sCw-3m-SOy"/>
+                <constraint firstItem="1L0-NA-Eh8" firstAttribute="centerX" secondItem="uAP-4W-Sy3" secondAttribute="centerX" id="sRc-Nc-aBS"/>
+                <constraint firstAttribute="trailing" secondItem="1L0-NA-Eh8" secondAttribute="trailing" id="sTZ-Ae-COt"/>
+                <constraint firstItem="1L0-NA-Eh8" firstAttribute="bottom" secondItem="uAP-4W-Sy3" secondAttribute="bottom" id="uVH-QF-XiC"/>
+                <constraint firstItem="Ozy-OC-loG" firstAttribute="width" secondItem="1L0-NA-Eh8" secondAttribute="width" id="vxE-aw-eIG"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="web_icon_back" width="26" height="26"/>
+        <image name="web_icon_forward" width="26" height="26"/>
+        <image name="web_icon_refresh" width="26" height="26"/>
+        <image name="web_icon_share" width="26" height="26"/>
+    </resources>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tkD-qh-sO5" customClass="HXSShopViewFootView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="214"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您所在的楼栋竟然一个店铺都没有，" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZz-8e-DmY">
+                    <rect key="frame" x="48" y="50" width="224" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="h0r-Nv-gVG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快去申请当第一个店长吧。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jES-va-C8m">
+                    <rect key="frame" x="76.5" y="67" width="168" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="dS7-oc-37r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFj-7t-sgh">
+                    <rect key="frame" x="65" y="138" width="190" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="Ex6-1f-A8n"/>
+                        <constraint firstAttribute="height" constant="40" id="dLw-Vr-mAp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="申请做店长">
+                        <color key="titleColor" red="0.15686274509803921" green="0.58823529411764708" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Ex6-1f-A8n"/>
+                        </mask>
+                    </variation>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hFj-7t-sgh" firstAttribute="leading" secondItem="tkD-qh-sO5" secondAttribute="leading" constant="15" id="3U7-h5-bDb"/>
+                <constraint firstAttribute="trailing" secondItem="hFj-7t-sgh" secondAttribute="trailing" constant="15" id="LCd-if-dgJ"/>
+                <constraint firstItem="hFj-7t-sgh" firstAttribute="centerX" secondItem="tkD-qh-sO5" secondAttribute="centerX" id="LUj-Gh-SqB"/>
+                <constraint firstItem="hFj-7t-sgh" firstAttribute="top" secondItem="jES-va-C8m" secondAttribute="bottom" constant="50" id="aSA-W8-P8h"/>
+                <constraint firstItem="jES-va-C8m" firstAttribute="centerX" secondItem="tkD-qh-sO5" secondAttribute="centerX" id="eU4-qr-EWa"/>
+                <constraint firstItem="jES-va-C8m" firstAttribute="top" secondItem="tkD-qh-sO5" secondAttribute="top" constant="67" id="ffN-6I-z89"/>
+                <constraint firstItem="BZz-8e-DmY" firstAttribute="centerX" secondItem="tkD-qh-sO5" secondAttribute="centerX" id="vwb-Cu-pHm"/>
+                <constraint firstItem="BZz-8e-DmY" firstAttribute="top" secondItem="tkD-qh-sO5" secondAttribute="top" constant="50" id="xWj-Ds-VK6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="LUj-Gh-SqB"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="openShopButton" destination="hFj-7t-sgh" id="Nzv-Q2-h2w"/>
+            </connections>
+            <point key="canvasLocation" x="536" y="172"/>
+        </view>
+    </objects>
+</document>

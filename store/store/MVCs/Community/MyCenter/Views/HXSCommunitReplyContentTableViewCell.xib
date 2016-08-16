@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="HXSCommunitReplyContentTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HXSUITapImageView" translatesAutoresizingMaskIntoConstraints="NO" id="1cg-dz-SDF" customClass="HXSUITapImageView">
+                        <rect key="frame" x="15" y="15" width="30" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="g87-bl-YsB"/>
+                            <constraint firstAttribute="width" constant="30" id="uLn-bM-ypM"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvw-oQ-AY5" userLabel="nameButton">
+                        <rect key="frame" x="60" y="13" width="459" height="34"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.24313725490196078" green="0.40784313725490196" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="nameButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1bs-8C-hCN"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5小时之前" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="BcF-2X-dBv" userLabel="timeLabel">
+                        <rect key="frame" x="529" y="23" width="56" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="d6L-lf-6UU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="15" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="UMr-bj-eXy" userLabel="contentLabel" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="60" y="55" width="525" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="XH9-Dc-uwf"/>
+                        </connections>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lvw-oQ-AY5" firstAttribute="centerY" secondItem="1cg-dz-SDF" secondAttribute="centerY" id="Qqe-5u-3ng"/>
+                    <constraint firstItem="UMr-bj-eXy" firstAttribute="leading" secondItem="lvw-oQ-AY5" secondAttribute="leading" id="cCG-TY-Vfy"/>
+                    <constraint firstItem="UMr-bj-eXy" firstAttribute="top" secondItem="1cg-dz-SDF" secondAttribute="bottom" constant="10" id="dLj-Xf-UEs"/>
+                    <constraint firstItem="BcF-2X-dBv" firstAttribute="leading" secondItem="lvw-oQ-AY5" secondAttribute="trailing" constant="10" id="eeg-oZ-uVg"/>
+                    <constraint firstItem="BcF-2X-dBv" firstAttribute="centerY" secondItem="1cg-dz-SDF" secondAttribute="centerY" id="n8N-9n-I3f"/>
+                    <constraint firstItem="lvw-oQ-AY5" firstAttribute="leading" secondItem="1cg-dz-SDF" secondAttribute="trailing" constant="15" id="wU3-qE-t0P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BcF-2X-dBv" secondAttribute="trailing" constant="15" id="8kr-vS-kuw"/>
+                <constraint firstItem="1cg-dz-SDF" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="15" id="Mts-as-iIB"/>
+                <constraint firstAttribute="trailing" secondItem="UMr-bj-eXy" secondAttribute="trailing" constant="15" id="OFu-j8-eV2"/>
+                <constraint firstItem="1cg-dz-SDF" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="15" id="Uvi-dW-hpY"/>
+                <constraint firstAttribute="bottom" secondItem="UMr-bj-eXy" secondAttribute="bottom" id="dYz-wu-IgP"/>
+            </constraints>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="avatarImageView" destination="1cg-dz-SDF" id="exQ-2u-nBB"/>
+                <outlet property="contentLabel" destination="UMr-bj-eXy" id="Azy-dx-0ac"/>
+                <outlet property="nameButton" destination="lvw-oQ-AY5" id="Utb-Wq-SND"/>
+                <outlet property="timeLabel" destination="BcF-2X-dBv" id="usy-wO-a32"/>
+            </connections>
+            <point key="canvasLocation" x="307" y="458.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="HXSUITapImageView" width="55" height="55"/>
+    </resources>
+</document>

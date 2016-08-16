@@ -1,0 +1,1 @@
+../../../../HXThirdSdk/HXThirdSdk/AlipaySDK/AlipaySDK.framework/Headers/APayAuthInfo.h

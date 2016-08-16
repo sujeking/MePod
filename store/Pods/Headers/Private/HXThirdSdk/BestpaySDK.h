@@ -1,0 +1,1 @@
+../../../HXThirdSdk/HXThirdSdk/BestPaySDK/BestpaySDK.h

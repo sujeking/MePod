@@ -1,0 +1,1 @@
+../../../HXThirdSdk/HXThirdSdk/UdeskSDK/UDChatMessage/Tools/Vendor/UDHpple/UDHppleElement.h

@@ -1,0 +1,1 @@
+../../../HXStoreMediator/HXStoreMediator/ModuleActions/LocationModule/HXSMediator+LocationModule.h

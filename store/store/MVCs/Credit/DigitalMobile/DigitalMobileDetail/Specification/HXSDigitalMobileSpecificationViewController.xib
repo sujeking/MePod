@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXSDigitalMobileSpecificationViewController">
+            <connections>
+                <outlet property="scrollableTabBar" destination="K9U-YJ-QbZ" id="hNK-Wv-ZXA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="mh8-Jr-5XN" id="ZRr-6Z-Cyp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9U-YJ-QbZ" customClass="HXSDigitalMobileScrollableTabBar">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="i7h-Ws-jBg"/>
+                    </constraints>
+                </view>
+                <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mh8-Jr-5XN">
+                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTZ-1V-72R" customClass="HXSLineView">
+                    <rect key="frame" x="0.0" y="44" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.81960784313725488" green="0.82352941176470584" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="XZt-9F-Jbo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mh8-Jr-5XN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0YI-22-M4Q"/>
+                <constraint firstItem="K9U-YJ-QbZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="165-Xe-bQh"/>
+                <constraint firstItem="YTZ-1V-72R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4f0-TF-YTf"/>
+                <constraint firstItem="mh8-Jr-5XN" firstAttribute="top" secondItem="K9U-YJ-QbZ" secondAttribute="bottom" id="8FC-0s-kDH"/>
+                <constraint firstItem="K9U-YJ-QbZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Bh1-AV-eN3"/>
+                <constraint firstAttribute="trailing" secondItem="mh8-Jr-5XN" secondAttribute="trailing" id="ECl-9d-ORP"/>
+                <constraint firstAttribute="trailing" secondItem="YTZ-1V-72R" secondAttribute="trailing" id="JT2-rn-w2k"/>
+                <constraint firstAttribute="trailing" secondItem="K9U-YJ-QbZ" secondAttribute="trailing" id="ZOR-Ev-4KU"/>
+                <constraint firstAttribute="bottom" secondItem="mh8-Jr-5XN" secondAttribute="bottom" id="eXg-hF-vYV"/>
+                <constraint firstItem="YTZ-1V-72R" firstAttribute="top" secondItem="K9U-YJ-QbZ" secondAttribute="bottom" id="oxk-qK-rrd"/>
+            </constraints>
+            <point key="canvasLocation" x="677" y="483"/>
+        </view>
+    </objects>
+</document>

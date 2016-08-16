@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXSBoxDispatchViewController">
+            <connections>
+                <outlet property="lastBillBtn" destination="XbD-WC-IrF" id="E5t-Rg-DPE"/>
+                <outlet property="view" destination="D20-Uq-uto" id="BSS-S6-aep"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="D20-Uq-uto">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_snackswait" translatesAutoresizingMaskIntoConstraints="NO" id="OyK-vu-nV0">
+                    <rect key="frame" x="40" y="66" width="520" height="242"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbD-WC-IrF">
+                    <rect key="frame" x="232" y="467" width="136" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="49F-YD-cn9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="查看上期消费清单">
+                        <color key="titleColor" red="0.027450980392156862" green="0.66274509803921566" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickLastBillBtn:" destination="-1" eventType="touchUpInside" id="Pui-RJ-u8X"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="零食盒将火速送到你的手中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdU-MI-43w">
+                    <rect key="frame" x="198" y="327" width="204" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="71N-2r-15k"/>
+                        <constraint firstAttribute="width" constant="204" id="N1k-BH-u2u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.26666666666666666" green="0.43529411764705883" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTg-xy-ogP" customClass="UIRenderingButton">
+                    <rect key="frame" x="206" y="407" width="188" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="188" id="5R9-Ov-Zo8"/>
+                        <constraint firstAttribute="height" constant="40" id="x3z-Qh-apN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="联系店长，一切搞定">
+                        <color key="titleColor" red="0.031372549020000001" green="0.66274509800000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.027450980392156862" green="0.66274509803921566" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedbackGroundColor">
+                            <color key="value" red="0.70196078429999997" green="0.8980392157" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="contactDormManager:" destination="-1" eventType="touchUpInside" id="zfK-5u-KXA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OyK-vu-nV0" firstAttribute="top" secondItem="D20-Uq-uto" secondAttribute="bottom" multiplier="140:1270" id="6lf-Md-43B"/>
+                <constraint firstItem="OyK-vu-nV0" firstAttribute="leading" secondItem="D20-Uq-uto" secondAttribute="leading" constant="40" id="9Oo-Fu-bCn"/>
+                <constraint firstItem="XbD-WC-IrF" firstAttribute="top" secondItem="fTg-xy-ogP" secondAttribute="bottom" constant="20" id="KWP-dG-0Dt"/>
+                <constraint firstItem="XbD-WC-IrF" firstAttribute="centerX" secondItem="D20-Uq-uto" secondAttribute="centerX" id="LaL-Ak-4kw"/>
+                <constraint firstAttribute="trailing" secondItem="OyK-vu-nV0" secondAttribute="trailing" constant="40" id="OXL-nV-AjO"/>
+                <constraint firstItem="fTg-xy-ogP" firstAttribute="top" secondItem="D20-Uq-uto" secondAttribute="bottom" multiplier="861:1270" id="eNu-Ah-9Ct"/>
+                <constraint firstItem="XdU-MI-43w" firstAttribute="top" secondItem="D20-Uq-uto" secondAttribute="bottom" multiplier="692:1270" id="f4q-Pj-4ql"/>
+                <constraint firstItem="fTg-xy-ogP" firstAttribute="centerX" secondItem="D20-Uq-uto" secondAttribute="centerX" id="hga-hx-8mM"/>
+                <constraint firstItem="XdU-MI-43w" firstAttribute="centerX" secondItem="D20-Uq-uto" secondAttribute="centerX" id="rAs-tr-4vs"/>
+                <constraint firstItem="OyK-vu-nV0" firstAttribute="height" secondItem="D20-Uq-uto" secondAttribute="height" multiplier="512:1270" id="tYz-Yd-sBc"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="643" y="399"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_snackswait" width="300" height="256"/>
+    </resources>
+</document>

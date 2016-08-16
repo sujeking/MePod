@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HXSAdTableViewCell" rowHeight="191" id="KGk-i7-Jjw" customClass="HXSAdTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="32E-hY-QHs">
+                        <rect key="frame" x="0.0" y="0.0" width="137" height="150"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Te1-9U-ANn">
+                        <rect key="frame" x="138" y="0.0" width="182" height="74"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KW0-2h-z2f">
+                        <rect key="frame" x="138" y="75" width="182" height="75"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="Te1-9U-ANn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FKa-W6-cgZ"/>
+                    <constraint firstAttribute="trailing" secondItem="Te1-9U-ANn" secondAttribute="trailing" id="Ts3-x6-JuK"/>
+                    <constraint firstAttribute="bottom" secondItem="KW0-2h-z2f" secondAttribute="bottom" id="XdE-Fs-N9B"/>
+                    <constraint firstItem="KW0-2h-z2f" firstAttribute="leading" secondItem="32E-hY-QHs" secondAttribute="trailing" constant="1" id="eFD-gK-DHv"/>
+                    <constraint firstItem="32E-hY-QHs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hqa-q3-FwF"/>
+                    <constraint firstItem="Te1-9U-ANn" firstAttribute="leading" secondItem="32E-hY-QHs" secondAttribute="trailing" constant="1" id="lBn-fi-Uqi"/>
+                    <constraint firstAttribute="bottom" secondItem="32E-hY-QHs" secondAttribute="bottom" id="pNK-qA-RvH"/>
+                    <constraint firstItem="32E-hY-QHs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ta4-gN-4Bn"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Ts3-x6-JuK"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="KW0-2h-z2f" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="2/3" id="517-5w-nbj"/>
+                <constraint firstItem="Te1-9U-ANn" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="2/3" id="HcG-66-bhX"/>
+                <constraint firstItem="Te1-9U-ANn" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="1/2" constant="-1" id="QRb-s4-Pax"/>
+                <constraint firstItem="KW0-2h-z2f" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="1/2" id="upm-N3-2v7"/>
+                <constraint firstItem="32E-hY-QHs" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="1/3" constant="30" id="uvp-IR-fSW"/>
+                <constraint firstAttribute="trailing" secondItem="KW0-2h-z2f" secondAttribute="trailing" id="xYn-S6-o3S"/>
+                <constraint firstAttribute="trailing" secondItem="Te1-9U-ANn" secondAttribute="trailing" id="ymO-Mg-Kgi"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="HcG-66-bhX"/>
+                    <exclude reference="517-5w-nbj"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="adLeftImageView" destination="32E-hY-QHs" id="c4e-1U-9tz"/>
+                <outlet property="adRightBottomImageView" destination="KW0-2h-z2f" id="q6E-Dq-ONF"/>
+                <outlet property="adRightTopImageView" destination="Te1-9U-ANn" id="vjB-fB-R5B"/>
+            </connections>
+            <point key="canvasLocation" x="298" y="300"/>
+        </tableViewCell>
+    </objects>
+</document>

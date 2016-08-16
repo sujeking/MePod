@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HXSLogisticHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="76"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="物流公司：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksk-36-5He">
+                    <rect key="frame" x="15" y="15" width="70" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="TVj-IP-vby"/>
+                        <constraint firstAttribute="width" constant="70" id="ipg-KH-nUi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快递单号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tvq-Dn-d4p">
+                    <rect key="frame" x="15" y="46" width="70" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="bOG-33-bKl"/>
+                        <constraint firstAttribute="height" constant="21" id="yTH-1L-GGB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="京东快递" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbL-2A-V7n">
+                    <rect key="frame" x="90" y="15" width="120" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="DbB-aN-PIb"/>
+                        <constraint firstAttribute="height" constant="21" id="ak4-cY-ker"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123333333333" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3b-MH-NI7">
+                    <rect key="frame" x="90" y="46" width="150" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="BHO-SV-vAn"/>
+                        <constraint firstAttribute="width" constant="150" id="MoZ-wv-F6m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ksk-36-5He" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="BtX-fc-ZYa"/>
+                <constraint firstItem="Ksk-36-5He" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="Fkb-Z0-EhE"/>
+                <constraint firstItem="h3b-MH-NI7" firstAttribute="leading" secondItem="Tvq-Dn-d4p" secondAttribute="trailing" constant="5" id="LIc-o7-1lu"/>
+                <constraint firstItem="zbL-2A-V7n" firstAttribute="top" secondItem="Ksk-36-5He" secondAttribute="top" id="X8M-jJ-co3"/>
+                <constraint firstItem="Tvq-Dn-d4p" firstAttribute="top" secondItem="Ksk-36-5He" secondAttribute="bottom" constant="10" id="eNO-sR-Phd"/>
+                <constraint firstItem="Tvq-Dn-d4p" firstAttribute="leading" secondItem="Ksk-36-5He" secondAttribute="leading" id="j7S-R0-2j9"/>
+                <constraint firstItem="zbL-2A-V7n" firstAttribute="leading" secondItem="Ksk-36-5He" secondAttribute="trailing" constant="5" id="yRY-KT-aVm"/>
+                <constraint firstItem="h3b-MH-NI7" firstAttribute="top" secondItem="Tvq-Dn-d4p" secondAttribute="top" id="zda-bM-IVh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="expressNumberLabel" destination="h3b-MH-NI7" id="Ftm-vJ-mAj"/>
+            </connections>
+            <point key="canvasLocation" x="285.5" y="280"/>
+        </view>
+    </objects>
+</document>

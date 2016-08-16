@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yAG-gI-Y0B" customClass="HXSTopicCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="149" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="149" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CDc-Js-fld">
+                        <rect key="frame" x="0.0" y="0.0" width="149" height="107"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jr4-KB-S2W">
+                        <rect key="frame" x="129" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5Dd-Pf-R9A"/>
+                            <constraint firstAttribute="width" constant="20" id="ZEs-MA-FDr"/>
+                        </constraints>
+                        <connections>
+                            <action selector="editButtonClicked:" destination="yAG-gI-Y0B" eventType="touchUpInside" id="Bg4-mK-Ypl"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jr4-KB-S2W" secondAttribute="trailing" id="BOC-Qi-46p"/>
+                <constraint firstAttribute="bottom" secondItem="CDc-Js-fld" secondAttribute="bottom" id="IzR-hx-oan"/>
+                <constraint firstItem="CDc-Js-fld" firstAttribute="leading" secondItem="yAG-gI-Y0B" secondAttribute="leading" id="NUr-5P-RFL"/>
+                <constraint firstItem="Jr4-KB-S2W" firstAttribute="top" secondItem="yAG-gI-Y0B" secondAttribute="top" id="Py6-Db-cSi"/>
+                <constraint firstAttribute="trailing" secondItem="CDc-Js-fld" secondAttribute="trailing" id="XrZ-bY-uHa"/>
+                <constraint firstItem="CDc-Js-fld" firstAttribute="top" secondItem="yAG-gI-Y0B" secondAttribute="top" id="tOh-NO-o5g"/>
+            </constraints>
+            <size key="customSize" width="149" height="107"/>
+            <connections>
+                <outlet property="avatarImageView" destination="CDc-Js-fld" id="flo-HB-PGK"/>
+                <outlet property="editButton" destination="Jr4-KB-S2W" id="ChX-uM-Rya"/>
+            </connections>
+            <point key="canvasLocation" x="479.5" y="343.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

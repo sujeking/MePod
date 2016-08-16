@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HXSAmountTableViewCell" id="KGk-i7-Jjw" customClass="HXSAmountTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实付金额:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btl-MU-sU4">
+                        <rect key="frame" x="15" y="11" width="60.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="NyR-Cv-gac"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.027450980392156862" green="0.66274509803921566" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcL-PQ-P1b">
+                        <rect key="frame" x="80.5" y="12" width="43.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="XlR-7z-WLR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.97647058823529409" green="0.6470588235294118" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Btl-MU-sU4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ZKj-Lh-dB9"/>
+                    <constraint firstItem="hcL-PQ-P1b" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="al5-0X-068"/>
+                    <constraint firstItem="Btl-MU-sU4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aso-jk-gfA"/>
+                    <constraint firstItem="hcL-PQ-P1b" firstAttribute="leading" secondItem="Btl-MU-sU4" secondAttribute="trailing" constant="5" id="dIH-cn-nBw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.96383064985275269" green="0.99218052625656128" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="amountLabel" destination="hcL-PQ-P1b" id="Ex0-tw-Gax"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

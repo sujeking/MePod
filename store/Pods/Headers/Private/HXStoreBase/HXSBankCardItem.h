@@ -1,0 +1,1 @@
+../../../HXStoreBase/HXStoreBase/Classes/FinanceInfo/HXSBankCardItem.h

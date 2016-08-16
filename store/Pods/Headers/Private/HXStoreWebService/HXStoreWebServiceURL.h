@@ -1,0 +1,1 @@
+../../../HXStoreWebService/HXStoreWebService/HXStoreWebServiceURL.h

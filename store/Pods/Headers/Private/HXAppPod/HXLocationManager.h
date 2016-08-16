@@ -1,0 +1,1 @@
+../../../HXAppPod/HXAppPod/Classes/Location/HXLocationManager.h

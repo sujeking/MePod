@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXSRecommendViewController">
+            <connections>
+                <outlet property="cannotFindImageView" destination="k2E-Ch-Vcq" id="Ou8-Un-8kS"/>
+                <outlet property="cannotFindLabel" destination="go8-2s-99n" id="TwD-SU-WT1"/>
+                <outlet property="tableView" destination="eGZ-ZN-xg9" id="LrT-IL-Lto"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="eGZ-ZN-xg9">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="separatorColor" red="0.89411764709999997" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="img_account_unsuccessfully" translatesAutoresizingMaskIntoConstraints="NO" id="k2E-Ch-Vcq">
+                    <rect key="frame" x="200.5" y="205" width="200" height="150"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="暂时没有推荐" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="go8-2s-99n">
+                    <rect key="frame" x="249" y="375" width="102" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.77647058820000003" green="0.69411764710000001" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="k2E-Ch-Vcq" firstAttribute="centerY" secondItem="eGZ-ZN-xg9" secondAttribute="centerY" constant="-20" id="0xa-GG-UAn"/>
+                <constraint firstItem="go8-2s-99n" firstAttribute="centerX" secondItem="k2E-Ch-Vcq" secondAttribute="centerX" id="71V-jH-Vth"/>
+                <constraint firstItem="go8-2s-99n" firstAttribute="top" secondItem="k2E-Ch-Vcq" secondAttribute="bottom" constant="20" id="GnK-hU-P2T"/>
+                <constraint firstItem="eGZ-ZN-xg9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H0P-1J-ydF"/>
+                <constraint firstItem="k2E-Ch-Vcq" firstAttribute="centerX" secondItem="eGZ-ZN-xg9" secondAttribute="centerX" id="Sl9-Go-cCl"/>
+                <constraint firstAttribute="trailing" secondItem="eGZ-ZN-xg9" secondAttribute="trailing" id="jSY-kA-hnb"/>
+                <constraint firstItem="eGZ-ZN-xg9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xOZ-s1-swI"/>
+                <constraint firstAttribute="bottom" secondItem="eGZ-ZN-xg9" secondAttribute="bottom" id="zwM-oe-wLF"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_account_unsuccessfully" width="200" height="150"/>
+    </resources>
+</document>

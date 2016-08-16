@@ -1,0 +1,1 @@
+../../../HXStoreLogin/HXStoreLogin/Classes/PhoneRegister/HXSPhoneRegisterSetPasswdViewController.h

@@ -1,0 +1,1 @@
+../../../HXStoreMediator/HXStoreMediator/ModuleActions/PersonalModule/HXSMediator+HXPersonalModule.h

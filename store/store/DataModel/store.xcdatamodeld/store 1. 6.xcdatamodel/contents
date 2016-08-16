@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="HXSBox" representedClassName="HXSBox" syncable="YES">
+        <attribute name="boxID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="box_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="capacity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="room" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="boxCart" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="HXSBoxCart" inverseName="box" inverseEntity="HXSBoxCart" syncable="YES"/>
+        <relationship name="boxItem" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HXSBoxItem" inverseName="box" inverseEntity="HXSBoxItem" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="items"/>
+                <entry key="relatedByAttribute" value="itemID"/>
+            </userInfo>
+        </relationship>
+        <relationship name="boxQuestionnaire" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HXSBoxQuestionnaire" inverseName="box" inverseEntity="HXSBoxQuestionnaire" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="questionnaire"/>
+            </userInfo>
+        </relationship>
+        <relationship name="roomItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HXSRoom" inverseName="box" inverseEntity="HXSRoom" syncable="YES"/>
+        <userInfo>
+            <entry key="relatedByAttribute" value="boxID"/>
+        </userInfo>
+    </entity>
+    <entity name="HXSBoxCart" representedClassName="HXSBoxCart" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="boxID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="box_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="couponCode" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="coupon_code"/>
+            </userInfo>
+        </attribute>
+        <attribute name="couponDiscount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="coupon_discount"/>
+            </userInfo>
+        </attribute>
+        <attribute name="foodAmount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="food_amount"/>
+            </userInfo>
+        </attribute>
+        <attribute name="totalNum" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="total_num"/>
+            </userInfo>
+        </attribute>
+        <relationship name="box" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HXSBox" inverseName="boxCart" inverseEntity="HXSBox" syncable="YES"/>
+        <relationship name="boxCartItem" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HXSBoxCartItem" inverseName="boxCart" inverseEntity="HXSBoxCartItem" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="items"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="HXSBoxCartItem" representedClassName="HXSBoxCartItem" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="img" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="rid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="boxCart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HXSBoxCart" inverseName="boxCartItem" inverseEntity="HXSBoxCart" syncable="YES"/>
+    </entity>
+    <entity name="HXSBoxItem" representedClassName="HXSBoxItem" syncable="YES">
+        <attribute name="img" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="item_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="replenishing" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="stock" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="box" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HXSBox" inverseName="boxItem" inverseEntity="HXSBox" syncable="YES"/>
+    </entity>
+    <entity name="HXSBoxQuestionnaire" representedClassName="HXSBoxQuestionnaire" syncable="YES">
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="image"/>
+            </userInfo>
+        </attribute>
+        <attribute name="questionnaireUrl" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="url"/>
+            </userInfo>
+        </attribute>
+        <relationship name="box" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HXSBox" inverseName="boxQuestionnaire" inverseEntity="HXSBox" syncable="YES"/>
+    </entity>
+    <entity name="HXSCart" representedClassName="HXSCart" syncable="YES">
+        <attribute name="activityTips" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryFee" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="errorInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemAmount" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="itemNum" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="ownerUserId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="sessionNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="HXSCartItem" representedClassName="HXSCartItem" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="defaultImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageBig" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageMedium" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageSmall" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="originPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ownerUserId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="promotionId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="promotionLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="promotionType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="sessionNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="sid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="HXSDorm" representedClassName="HXSDorm" syncable="YES">
+        <attribute name="dormentryID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="dormentry_id"/>
+            </userInfo>
+        </attribute>
+        <relationship name="room" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HXSRoom" inverseName="dorm" inverseEntity="HXSRoom" syncable="YES">
+            <userInfo>
+                <entry key="relatedByAttribute" value="room"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="relatedByAttribute" value="dormentryID"/>
+        </userInfo>
+    </entity>
+    <entity name="HXSDormCart" representedClassName="HXSDormCart" syncable="YES">
+        <attribute name="couponCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="couponDiscount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="deliveryFee" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="dormentryId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="errorInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemAmount" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="itemNum" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="originAmountDoubleNum" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ownerUserId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="promotion_tip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sessionNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="HXSDormCartItem" representedClassName="HXSDormCartItem" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dormentryId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="error_info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageBig" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageMedium" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageSmall" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="ownerUserId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="sessionNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="HXSDormSession" representedClassName="HXSDormSession" syncable="YES">
+        <attribute name="completed" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="dormentryId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="ownerUserId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="sessionNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="HXSElemeCategory" representedClassName="HXSElemeCategory" syncable="YES">
+        <attribute name="categoryID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="categoryNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="food" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HXSElemeFood" inverseName="category" inverseEntity="HXSElemeFood" syncable="YES"/>
+        <relationship name="restaurant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HXSElemeRestaurant" inverseName="category" inverseEntity="HXSElemeRestaurant" syncable="YES"/>
+    </entity>
+    <entity name="HXSElemeFood" representedClassName="HXSElemeFood" syncable="YES">
+        <attribute name="foodID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="foodNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HXSElemeCategory" inverseName="food" inverseEntity="HXSElemeCategory" syncable="YES"/>
+    </entity>
+    <entity name="HXSElemeRestaurant" representedClassName="HXSElemeRestaurant" syncable="YES">
+        <attribute name="restaurantID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="category" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HXSElemeCategory" inverseName="restaurant" inverseEntity="HXSElemeCategory" syncable="YES"/>
+    </entity>
+    <entity name="HXSMessage" representedClassName="HXSMessage" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createTime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="create_time"/>
+            </userInfo>
+        </attribute>
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="message_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="status" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="action" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="HXSMessageAction" inverseName="message" inverseEntity="HXSMessageAction" syncable="YES"/>
+        <userInfo>
+            <entry key="relatedByAttribute" value="messageID"/>
+        </userInfo>
+    </entity>
+    <entity name="HXSMessageAction" representedClassName="HXSMessageAction" syncable="YES">
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="param" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="scheme" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="message" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HXSMessage" inverseName="action" inverseEntity="HXSMessage" syncable="YES"/>
+    </entity>
+    <entity name="HXSRoom" representedClassName="HXSRoom" syncable="YES">
+        <attribute name="room" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="box" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HXSBox" inverseName="roomItem" inverseEntity="HXSBox" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="items"/>
+                <entry key="relatedByAttribute" value="boxID"/>
+            </userInfo>
+        </relationship>
+        <relationship name="dorm" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HXSDorm" inverseName="room" inverseEntity="HXSDorm" syncable="YES"/>
+        <userInfo>
+            <entry key="relatedByAttribute" value="room"/>
+        </userInfo>
+    </entity>
+    <entity name="HXSSession" representedClassName="HXSSession" syncable="YES">
+        <attribute name="completed" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="ownerUserId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="sessionNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HXSBox" positionX="448" positionY="330" width="128" height="210"/>
+        <element name="HXSBoxCart" positionX="171" positionY="-33" width="128" height="165"/>
+        <element name="HXSBoxCartItem" positionX="403" positionY="-180" width="128" height="150"/>
+        <element name="HXSBoxItem" positionX="7" positionY="21" width="128" height="195"/>
+        <element name="HXSBoxQuestionnaire" positionX="205" positionY="551" width="128" height="88"/>
+        <element name="HXSCart" positionX="-252" positionY="81" width="128" height="150"/>
+        <element name="HXSCartItem" positionX="484" positionY="-630" width="128" height="328"/>
+        <element name="HXSDorm" positionX="-117" positionY="-405" width="128" height="75"/>
+        <element name="HXSDormCart" positionX="-234" positionY="240" width="128" height="210"/>
+        <element name="HXSDormCartItem" positionX="-45" positionY="294" width="128" height="255"/>
+        <element name="HXSDormSession" positionX="421" positionY="45" width="128" height="103"/>
+        <element name="HXSElemeCategory" positionX="34" positionY="-585" width="128" height="105"/>
+        <element name="HXSElemeFood" positionX="196" positionY="-585" width="128" height="120"/>
+        <element name="HXSElemeRestaurant" positionX="-144" positionY="-603" width="128" height="75"/>
+        <element name="HXSMessage" positionX="-342" positionY="-585" width="128" height="165"/>
+        <element name="HXSMessageAction" positionX="250" positionY="-378" width="128" height="135"/>
+        <element name="HXSRoom" positionX="-342" positionY="-306" width="128" height="90"/>
+        <element name="HXSSession" positionX="-180" positionY="-72" width="128" height="88"/>
+    </elements>
+</model>

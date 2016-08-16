@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D12954CA623DE4CE54EA805DB475B9F3DC2AD8B7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D12954CA623DE4CE54EA805DB475B9F3DC2AD8B7" : 0,
+    "EB10B84CD2027D9C12EF6326694E19AB293E025E" : 0,
+    "154399C8482116E864FBFAFF3718CC9DCE266057" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3AFFA943-797C-4369-8802-1157B8E466CF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D12954CA623DE4CE54EA805DB475B9F3DC2AD8B7" : "storeapp-ios\/",
+    "EB10B84CD2027D9C12EF6326694E19AB293E025E" : "HXLib\/",
+    "154399C8482116E864FBFAFF3718CC9DCE266057" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "store",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "store\/store.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/git.59store.com\/ios\/dormapp-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "154399C8482116E864FBFAFF3718CC9DCE266057"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.59store.com:ios\/storeapp-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D12954CA623DE4CE54EA805DB475B9F3DC2AD8B7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.59store.com:ios\/HXLib.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EB10B84CD2027D9C12EF6326694E19AB293E025E"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+../../../HXAppPod/HXAppPod/Classes/Utils/Base64Encoding.h

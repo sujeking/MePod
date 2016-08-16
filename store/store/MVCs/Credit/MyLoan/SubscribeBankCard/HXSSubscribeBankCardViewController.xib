@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXSSubscribeBankCardViewController">
+            <connections>
+                <outlet property="mainTableView" destination="9o6-t7-I7F" id="CkL-na-NFT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="9o6-t7-I7F" customClass="TPKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Xay-mv-BRU"/>
+                        <outlet property="delegate" destination="-1" id="PUD-Ke-ouZ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9o6-t7-I7F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3in-w1-XBU"/>
+                <constraint firstItem="9o6-t7-I7F" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jJl-kc-tEa"/>
+                <constraint firstAttribute="bottom" secondItem="9o6-t7-I7F" secondAttribute="bottom" id="qcW-co-H1t"/>
+                <constraint firstAttribute="trailing" secondItem="9o6-t7-I7F" secondAttribute="trailing" id="vt2-nm-gvR"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

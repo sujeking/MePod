@@ -1,0 +1,1 @@
+../../../HXThirdSdk/HXThirdSdk/UdeskSDK/UDChatMessage/Tools/Common/UDFoundationMacro.h

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXSMyBoxOderViewController">
+            <connections>
+                <outlet property="cannotFindImageView" destination="Hni-ub-G8v" id="ROG-Sp-KPS"/>
+                <outlet property="cannotFindLabel" destination="orp-wn-YD8" id="H72-tJ-P9o"/>
+                <outlet property="tableView" destination="IPz-Vl-aS4" id="h62-ZG-9HX"/>
+                <outlet property="view" destination="AaB-mF-6yv" id="UES-vV-y4T"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="AaB-mF-6yv">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="img_empty_cash_record" translatesAutoresizingMaskIntoConstraints="NO" id="Hni-ub-G8v">
+                    <rect key="frame" x="260" y="80" width="80" height="80"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="暂无订单记录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orp-wn-YD8">
+                    <rect key="frame" x="232" y="175" width="136" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="1FJ-n6-E9c"/>
+                        <constraint firstAttribute="width" constant="136" id="aza-Lp-M5H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="IPz-Vl-aS4">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="separatorColor" red="0.81960784310000001" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="orp-wn-YD8" secondAttribute="centerX" id="2Ww-H4-hGb"/>
+                <constraint firstItem="orp-wn-YD8" firstAttribute="top" secondItem="Hni-ub-G8v" secondAttribute="bottom" constant="15" id="3eb-Ah-VF4"/>
+                <constraint firstAttribute="centerX" secondItem="Hni-ub-G8v" secondAttribute="centerX" id="5rg-TS-1k5"/>
+                <constraint firstAttribute="trailing" secondItem="IPz-Vl-aS4" secondAttribute="trailing" id="9s3-xA-iym"/>
+                <constraint firstItem="Hni-ub-G8v" firstAttribute="top" secondItem="AaB-mF-6yv" secondAttribute="top" constant="80" id="I2T-7r-qem"/>
+                <constraint firstItem="IPz-Vl-aS4" firstAttribute="top" secondItem="AaB-mF-6yv" secondAttribute="top" id="ICf-kI-7M4"/>
+                <constraint firstItem="IPz-Vl-aS4" firstAttribute="leading" secondItem="AaB-mF-6yv" secondAttribute="leading" id="Wsm-pr-S2g"/>
+                <constraint firstAttribute="bottom" secondItem="IPz-Vl-aS4" secondAttribute="bottom" id="l5S-CR-72d"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_empty_cash_record" width="80" height="80"/>
+    </resources>
+</document>

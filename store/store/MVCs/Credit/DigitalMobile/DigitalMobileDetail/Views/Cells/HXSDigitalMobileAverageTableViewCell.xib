@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HXSDigitalMobileAverageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评价：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSS-mN-31x">
+                        <rect key="frame" x="15" y="11" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="8Pe-qF-eJe"/>
+                            <constraint firstAttribute="height" constant="21" id="zwh-uV-BYD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.9分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7n-Lm-oc9">
+                        <rect key="frame" x="138" y="12" width="35" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Ssf-ze-HSO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.97647058823529409" green="0.6470588235294118" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lM-Up-uwm" customClass="HXSDormHotLevelView">
+                        <rect key="frame" x="60" y="16" width="70" height="12"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="QFi-4O-hyh"/>
+                            <constraint firstAttribute="width" constant="70" id="vt1-fL-bWZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HSS-mN-31x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="1Oq-2t-bk5"/>
+                    <constraint firstItem="g7n-Lm-oc9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2rw-wr-P46"/>
+                    <constraint firstItem="HSS-mN-31x" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="On2-PX-bad"/>
+                    <constraint firstItem="5lM-Up-uwm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="d4p-xm-oFI"/>
+                    <constraint firstItem="g7n-Lm-oc9" firstAttribute="leading" secondItem="5lM-Up-uwm" secondAttribute="trailing" constant="8" id="sV4-mA-y47"/>
+                    <constraint firstItem="5lM-Up-uwm" firstAttribute="leading" secondItem="HSS-mN-31x" secondAttribute="trailing" constant="3" id="tAW-WQ-Qtl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="scoreLabel" destination="g7n-Lm-oc9" id="OGB-7f-zTB"/>
+                <outlet property="startView" destination="5lM-Up-uwm" id="KyR-5Y-OFP"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

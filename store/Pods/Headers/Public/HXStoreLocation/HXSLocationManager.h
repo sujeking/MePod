@@ -1,0 +1,1 @@
+../../../HXStoreLocation/HXStoreLocation/Classes/HXSLocationManager.h
