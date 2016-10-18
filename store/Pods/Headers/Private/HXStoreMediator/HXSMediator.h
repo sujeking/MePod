@@ -1,1 +1,0 @@
-../../../HXStoreMediator/HXStoreMediator/HXSMediator.h

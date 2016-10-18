@@ -1,1 +1,0 @@
-../../../HXThirdSdk/HXThirdSdk/BestPaySDK/BestpayNativeModel.h

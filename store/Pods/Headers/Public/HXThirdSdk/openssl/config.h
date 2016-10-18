@@ -1,1 +1,0 @@
-../../../../HXThirdSdk/HXThirdSdk/AlipaySDK/Util/config.h

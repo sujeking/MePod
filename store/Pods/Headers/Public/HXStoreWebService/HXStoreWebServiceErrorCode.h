@@ -1,1 +1,0 @@
-../../../HXStoreWebService/HXStoreWebService/HXStoreWebServiceErrorCode.h

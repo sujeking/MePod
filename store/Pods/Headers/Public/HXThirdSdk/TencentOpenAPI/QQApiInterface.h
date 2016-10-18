@@ -1,1 +1,0 @@
-../../../../HXThirdSdk/HXThirdSdk/QQSDK/TencentOpenAPI.framework/Headers/QQApiInterface.h

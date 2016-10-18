@@ -1,1 +1,0 @@
-../../../HXStoreBase/HXStoreBase/Classes/ShopManager/HXSShopManager.h

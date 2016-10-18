@@ -1,1 +1,0 @@
-../../../HXAppPod/HXAppPod/Classes/ModalAlert/HXModalAlert.h

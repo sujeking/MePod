@@ -1,1 +1,0 @@
-../../../HXStoreLocation/HXStoreLocation/Classes/Address/ViewModel/HXSShopModel.h

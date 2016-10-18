@@ -1,1 +1,0 @@
-../../../HXStoreAccount/HXStoreAccount/Classes/Model/Entities/HXSUserKnightInfo.h

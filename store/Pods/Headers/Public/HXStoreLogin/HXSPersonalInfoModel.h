@@ -1,1 +1,0 @@
-../../../HXStoreLogin/HXStoreLogin/Classes/PhoneRegister/Model/HXSPersonalInfoModel.h

@@ -1,1 +1,0 @@
-../../../HXStoreBase/HXStoreBase/Classes/AddressModel/HXSShopEntity.h

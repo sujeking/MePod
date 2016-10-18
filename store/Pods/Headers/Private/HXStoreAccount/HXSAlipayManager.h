@@ -1,1 +1,0 @@
-../../../HXStoreAccount/HXStoreAccount/Classes/SDKs/AlipaySDK/HXSAlipayManager.h

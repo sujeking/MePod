@@ -1,1 +1,0 @@
-../../../HXStoreBase/HXStoreBase/Classes/BaseViewsAndVCs/Views/HXSRegisterVerifyButton.h

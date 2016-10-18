@@ -1,1 +1,0 @@
-../../../HXAppPod/HXAppPod/Classes/Extension/NSString+Verification.h

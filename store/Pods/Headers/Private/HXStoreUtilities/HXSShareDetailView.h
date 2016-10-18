@@ -1,1 +1,0 @@
-../../../HXStoreUtilities/HXStoreUtilities/Classes/Share/Views/HXSShareDetailView.h

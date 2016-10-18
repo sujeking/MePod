@@ -1,1 +1,0 @@
-../../../HXStoreAccount/HXStoreAccount/Classes/Model/Entities/HXSUserCreditcardInfoEntity.h

@@ -1,1 +1,0 @@
-../../../HXStoreLocation/HXStoreLocation/Classes/Address/Building/Views/HXSBuildingTableViewCell.h
